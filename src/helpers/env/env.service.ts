@@ -10,6 +10,10 @@ export class EnvService implements IEnv {
     return this.envConfig.getValue('JWT_SECRET');
   }
 
+  getJwtExpirationTime(): string {
+    return this.envConfig.getValue('JWT_EXPIRES_IN');
+  }
+
   getAppPort(): any {
     return this.envConfig.getValue('APP_PORT');
   }
