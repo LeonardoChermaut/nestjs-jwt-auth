@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { APP_FILTER } from '@nestjs/core';
-import { UseGlobalValidationPipe } from './use.validation.pipe';
+import { UseGlobalValidationPipe } from '@src/domain/http/validation';
 
 @Module({
   providers: [

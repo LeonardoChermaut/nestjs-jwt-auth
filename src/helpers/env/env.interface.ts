@@ -1,6 +1,4 @@
-import { ConfigService } from '@nestjs/config';
-
 export interface IEnv {
-  getDatabase(config: ConfigService): string;
+  getJwtSecret(): string;
   getAppPort(): number;
 }

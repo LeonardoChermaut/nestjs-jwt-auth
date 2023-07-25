@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { APP_FILTER } from '@nestjs/core';
-import { UseGlobalHttpFxceptionFilter } from './use.global.exception';
+import { UseGlobalHttpFxceptionFilter } from '@src/domain/http/exception/use.global.exception';
 
 @Module({
   providers: [

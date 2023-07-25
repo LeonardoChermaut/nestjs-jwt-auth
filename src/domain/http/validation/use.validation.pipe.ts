@@ -1,6 +1,6 @@
 import { ValidationPipe, HttpStatus } from '@nestjs/common';
 import { ValidationError } from 'class-validator';
-import { HandleHttpException } from '../../http/exception';
+import { HandleHttpException } from '@src/domain/http/exception';
 
 export class UseGlobalValidationPipe extends ValidationPipe {
   constructor() {

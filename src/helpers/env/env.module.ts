@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { EnvConfiguration } from './env.config';
-import { EnvService } from './env.service';
+import { EnvConfiguration } from '@src/helpers/env/env.config';
+import { EnvService } from '@src/helpers/env/env.service';
 
 @Module({
   providers: [EnvConfiguration, EnvService],
