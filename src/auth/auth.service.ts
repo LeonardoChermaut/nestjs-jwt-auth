@@ -4,6 +4,7 @@ import * as bcrypt from 'bcrypt';
 import { UserService } from '@src/domain/user/user.service';
 import { User, UserPayload } from '@prisma/client';
 import { UnauthorizedError } from '@src/auth/errors';
+import { UserToken } from '@src/auth/models';
 
 @Injectable()
 export class AuthService {

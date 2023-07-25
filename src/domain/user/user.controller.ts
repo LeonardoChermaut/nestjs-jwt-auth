@@ -51,8 +51,8 @@ export class UserController {
     status: HttpStatus.OK,
     description: 'User found successfully',
   })
-  findOne(@Param('id') id: string) {
-    return this.userService.findOne(+id);
+  findByEmail(@Param('id') email: string) {
+    return this.userService.findByEmail(email);
   }
 
   @Patch(':id')
