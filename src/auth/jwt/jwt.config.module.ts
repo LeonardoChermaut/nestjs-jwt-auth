@@ -1,6 +1,6 @@
 import { DynamicModule, Module } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
-import { JwtConfig } from './jwt.config';
+import { JwtConfig } from '@src/auth/jwt/jwt.config';
 
 @Module({})
 export class JwtConfigModule {

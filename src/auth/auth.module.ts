@@ -7,11 +7,20 @@ import { AuthService } from '@src/auth/auth.service';
 import { LocalStrategy } from '@src/auth/strategies';
 import { JwtStrategy } from '@src/auth/jwt/jwt.strategy';
 import { LoginValidationMiddleware } from '@src/auth/middlewares';
+import { JwtService } from '@nestjs/jwt';
+import { EnvConfiguration, EnvService } from '@src/helpers/env';
 
 @Module({
   imports: [UserModule, PassportModule, JwtConfigModule.register()],
   controllers: [AuthController],
-  providers: [AuthService, LocalStrategy, JwtStrategy],
+  providers: [
+    AuthService,
+    LocalStrategy,
+    JwtStrategy,
+    JwtService,
+    EnvService,
+    EnvConfiguration,
+  ],
 })
 export class AuthModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
