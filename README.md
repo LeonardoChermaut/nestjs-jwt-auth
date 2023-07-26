@@ -19,6 +19,7 @@ $ npm install
 $ yarn start:dev
 or
 $ npm start:dev
+````
 
 ## Test
 
