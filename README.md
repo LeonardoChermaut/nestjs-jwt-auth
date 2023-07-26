@@ -16,13 +16,9 @@ $ npm install
 
 ````bash
 # development
-$ yarn start --watch
+$ yarn start:dev
 or
-$ npm start --watch
-
-
-# watch mode
-$ npm run start:dev
+$ npm start:dev
 
 ## Test
 
